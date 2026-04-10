@@ -48,6 +48,20 @@ Sensors → ESP32 → Wi-Fi → Firebase / Adafruit IO → Dashboard → Safety 
 - potentiometer-controlled water pump
 
 ---
+
+## Pin Configuration
+
+| Component | ESP32 Pin |
+|---|---|
+| Thermocouple SO | D18 |
+| Thermocouple CS | D19 |
+| Thermocouple SCK | D21 |
+| Flow Sensor | D4 |
+| UV Sensor | D25 |
+| Buzzer | D13 |
+
+---
+
 ## Hardware Wiring Guide
 
 Detailed sensor and circuit connection instructions are available here:
