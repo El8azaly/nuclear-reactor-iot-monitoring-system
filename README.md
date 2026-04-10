@@ -2,7 +2,7 @@
 
 An **ESP32-based real-time safety monitoring prototype** designed to simulate critical nuclear reactor parameters, including **core temperature**, **coolant water flow rate**, and **UV radiation leakage**.
 
-The system collects live sensor readings, transmits them over **Wi-Fi**, and visualizes them on **cloud dashboards** using **Firebase** and **Adafruit IO**, while triggering safety alerts under abnormal operating conditions.
+The system collects live sensor readings, transmits them over **Wi-Fi**, and visualizes them on **cloud dashboards** using **Firebase Realtime Database** and **Adafruit IO**, while triggering automated safety alerts under abnormal operating conditions.
 
 ---
 
@@ -48,6 +48,13 @@ Sensors → ESP32 → Wi-Fi → Firebase / Adafruit IO → Dashboard → Safety 
 - potentiometer-controlled water pump
 
 ---
+## Hardware Wiring Guide
+
+Detailed sensor and circuit connection instructions are available here:
+
+[View Wiring Guide](docs/wiring-guide.md)
+
+---
 
 ## Circuit Diagram
 
@@ -61,6 +68,15 @@ Sensors → ESP32 → Wi-Fi → Firebase / Adafruit IO → Dashboard → Safety 
 
 ---
 
+## Dashboard Preview
+
+Real-time monitoring dashboard displaying sensor data for temperature, coolant flow, and UV leakage.
+
+![Dashboard Preview](diagrams/dashboard.png)
+
+---
+
+
 ## Technologies Used
 
 - **C++**
@@ -71,6 +87,22 @@ Sensors → ESP32 → Wi-Fi → Firebase / Adafruit IO → Dashboard → Safety 
 - **MQTT**
 - **Wi-Fi communication**
 - **Embedded systems**
+
+---
+## Getting Started
+
+1. Clone the repository
+2. Open `src/main.ino` in Arduino IDE
+3. Install required libraries:
+   - Firebase ESP Client
+   - Adafruit MQTT
+   - MAX6675
+4. Replace placeholder credentials with your own:
+   - Wi-Fi SSID / password
+   - Firebase API key
+   - Adafruit IO key
+5. Upload the code to ESP32
+6. Power the system and monitor data on the dashboard
 
 ---
 
@@ -102,3 +134,11 @@ This prototype demonstrates how IoT can be applied in:
 src/        → ESP32 source code
 diagrams/   → circuit and prototype images
 docs/       → project documentation and poster
+```
+
+---
+## Additional Documentation
+
+- [Wiring Guide](docs/wiring-guide.md)
+- [Project Poster](docs/poster.pdf)
+- [Capstone Portfolio](docs/portfolio.pdf)
