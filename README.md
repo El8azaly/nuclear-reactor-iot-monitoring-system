@@ -57,7 +57,7 @@ Sensors → ESP32 → Wi-Fi → Firebase / Adafruit IO → Dashboard → Safety 
 
 ## Prototype Setup
 
-![Prototype Setup](diagrams/prototype-setup.jpg)
+![Prototype Setup](diagrams/prototype-setup.png)
 
 ---
 
